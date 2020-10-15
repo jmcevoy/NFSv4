@@ -1,5 +1,5 @@
 <p align="right">06-Nov-2014</p>
-# Using NFSv4 ACL Inheritance <br /> &nbsp;to Share Documents Between Two Groups of Users
+<H1>Using NFSv4 ACL Inheritance <br />to Share Documents Between Two Groups of Users</H1>
 
 ### Objective
 This is a example of how to create a top level directory named SharedDocs that will give full access to the members of group1 and group2.  
@@ -88,7 +88,7 @@ Look at the resulting ACL for the SharedDocs directory.
 	A:fdig:group2@enas.net:rwaDxtcy
 	A:fdi:EVERYONE@:tcy
 
-####Test the inherited permissions by logging in as as group1Member.
+#### Test the inherited permissions by logging in as as group1Member.
 
 	ssh group1Member@localhost
 	cd ../SharedDocs
@@ -124,7 +124,7 @@ Look at the resulting ACL for the SharedDocs directory.
 	A:g:group2@enas.net:rwatcy
 	A::EVERYONE@:tcy
 
-####Test the inherited permissions by logging in as as group2Member.
+#### Test the inherited permissions by logging in as as group2Member.
 
 	ssh group2Member@localhost
 	cd ../SharedDocs
